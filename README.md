@@ -3,6 +3,8 @@
 
 Reproduce the BUG described in [#174](https://github.com/chiahsien/CHTCollectionViewWaterfallLayout/issues/174).
 
+The `demo` will have a part of the` header` does not display properly.
+
 ### The main steps
 
 In the `UICollectionViewWaterfallLayout.m -> - (void) prepareLayout`, set` `NSIndexPath indexPathForItem: 0 inSection: section]`
@@ -17,11 +19,14 @@ Dict [@ "KEY"] = @ "value1";
 Dict [@ "KEY"] = @ "value2";
 ```
 
+
 ------
 
 ## DEMO-CHT#166BUG
 
 重现[#174](https://github.com/chiahsien/CHTCollectionViewWaterfallLayout/issues/174)中所描述的BUG。
+
+这个`demo`将有一部分`header`无法正常显示.
 
 ### 主要步骤
 
@@ -36,3 +41,4 @@ NSMutableDictionary *dict = [NSMutableDictionary dictionary];
 dict[@"KEY"] = @"value1";
 dict[@"KEY"] = @"value2";
 ```
+
